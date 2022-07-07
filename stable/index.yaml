@@ -1,0 +1,647 @@
+apiVersion: v1
+entries:
+  chaos-mesh:
+  - apiVersion: v2
+    appVersion: 2.0.4
+    created: "2022-07-07T09:25:40.708452142Z"
+    description: Chaos Mesh® is a cloud-native Chaos Engineering platform that orchestrates
+      chaos on Kubernetes environments.
+    digest: df01b8a409d3a010413dbc3db00e8cf8fb5e308954997d7477fc41ab882d97ce
+    home: https://chaos-mesh.org
+    icon: https://raw.githubusercontent.com/pingcap/chaos-mesh/master/static/logo.svg
+    keywords:
+    - chaos-engineering
+    - resiliency
+    - fault-injection
+    - kubernetes
+    - testing
+    name: chaos-mesh
+    sources:
+    - https://github.com/pingcap/chaos-mesh
+    urls:
+    - https://charts.kubesphere.io/stable/chaos-mesh-2.0.4.tgz
+    version: 2.0.4
+  - apiVersion: v2
+    appVersion: 2.0.3
+    created: "2021-11-25T06:01:26.889811233Z"
+    description: Chaos Mesh® is a cloud-native Chaos Engineering platform that orchestrates
+      chaos on Kubernetes environments.
+    digest: 88097c8a0c48465d91c7528b2953dae84b06169e3acdaa5c104982a7be1ce0a1
+    home: https://chaos-mesh.org
+    icon: https://raw.githubusercontent.com/pingcap/chaos-mesh/master/static/logo.svg
+    keywords:
+    - chaos-engineering
+    - resiliency
+    - fault-injection
+    - kubernetes
+    - testing
+    name: chaos-mesh
+    sources:
+    - https://github.com/pingcap/chaos-mesh
+    urls:
+    - https://charts.kubesphere.io/stable/chaos-mesh-2.0.3.tgz
+    version: 2.0.3
+  crane:
+  - annotations:
+      app.kubesphere.io/category: Continuous Optimization
+    apiVersion: v2
+    appVersion: v0.5.1
+    created: "2022-07-06T01:22:56.849769663Z"
+    description: Crane (FinOps Crane) is an opensource project which manages cloud
+      resource on Kubernetes stack, it is inspired by FinOps concepts.
+    digest: 6f3cf57089a0411d7a21798f600d5b65d9ccac91e3a998f7bb1bd1b0a1820c52
+    home: https://github.com/gocrane/crane
+    icon: https://docs.gocrane.io/dev/images/crane.svg
+    keywords:
+    - kubernetes
+    - finops
+    - autoscaling
+    - hpa
+    - vpa
+    - resources
+    - qos
+    maintainers:
+    - email: brilliantroad@126.com
+      name: qmhu
+    name: crane
+    sources:
+    - https://github.com/gocrane/crane
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/crane-0.5.1.tgz
+    version: 0.5.1
+  - apiVersion: v2
+    appVersion: v0.5.0
+    created: "2022-06-24T01:29:37.813403311Z"
+    description: A Helm chart for Crane
+    digest: 0a61e2c53f868ca565bb98c17e18dade1168685ab16a2176993e37057761d448
+    home: https://github.com/gocrane/crane
+    icon: https://github.com/gocrane/crane/blob/main/docs/images/crane.png
+    keywords:
+    - kubernetes
+    - finops
+    - autoscaling
+    - hpa
+    - vpa
+    - resources
+    - qos
+    name: crane
+    sources:
+    - https://github.com/gocrane/crane
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/crane-0.5.0.tgz
+    version: 0.5.0
+  easegress:
+  - apiVersion: v2
+    created: "2022-02-28T02:31:31.816082078Z"
+    digest: 965fe7de2acf2b855c557d5b7d0b1927fd1e4d2cc4ef5f2563cb134982291f9f
+    maintainers:
+    - name: megaease
+      url: https://github.com/megaease/easegress
+    name: easegress
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/easegress-1.0.0.tgz
+    version: 1.0.0
+  edgemesh:
+  - annotations:
+      category: App Definition and Development
+    apiVersion: v2
+    appVersion: v1.9.0
+    created: "2022-01-04T08:03:58.503754487Z"
+    dependencies:
+    - name: server
+      repository: ""
+      version: 0.1.0
+    - name: agent
+      repository: ""
+      version: 0.1.0
+    description: EdgeMesh is a KubeEdge cluster network addon.
+    digest: 7e13f65e07b13e53592529f8444d39bd2875a8e01765e66646392879279bbe33
+    home: https://edgemesh.netlify.app/
+    icon: https://kubeedge.io/en/author/admin/avatar_hu6dd63758e9c8a7a1da773a2d4193fd13_641557_250x250_fill_box_center_2.png
+    keywords:
+    - edgemesh
+    - kubeedge
+    - edge computing
+    - network
+    - service mesh
+    maintainers:
+    - name: Poorunga
+      url: https://github.com/Poorunga
+    name: edgemesh
+    sources:
+    - https://github.com/kubeedge/edgemesh
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/edgemesh-0.1.0.tgz
+    version: 0.1.0
+  fpga-operator:
+  - annotations:
+      app.kubesphere.io/category: Infrastructure
+      app.kubesphere.io/display-name: InAccel FPGA Operator
+      artifacthub.io/images: |
+        - image: inaccel/coral:2.1
+          name: coral
+        - image: inaccel/daemon:latest
+          name: daemon
+        - image: inaccel/driver:latest
+          name: driver
+        - image: inaccel/mkrt:latest
+          name: mkrt
+        - image: inaccel/monitor:2.1
+          name: monitor
+        - image: inaccel/reef:latest
+          name: reef
+        - image: inaccel/vadd:latest
+          name: tests.vadd
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Documentation
+          url: https://docs.inaccel.com
+        - name: Support
+          url: https://github.com/inaccel/helm/issues
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: "2.1"
+    created: "2022-02-07T08:48:31.222254363Z"
+    dependencies:
+    - alias: fpga-discovery
+      condition: fpga-discovery.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.10.0
+    description: Simplifying FPGA management in Kubernetes
+    digest: 1fd23c73e560a0ab84f05b47db9eb2731728fe058b0b0b1c8b90ca7a3657700b
+    home: https://inaccel.com
+    icon: https://en.gravatar.com/userimage/147236320/2a11cd2992b4521ec287587f03fae35c.png?size=1250
+    keywords:
+    - fpga
+    - infrastructure
+    kubeVersion: '>= 1.18.0-0'
+    maintainers:
+    - email: info@inaccel.com
+      name: InAccel
+    name: fpga-operator
+    sources:
+    - https://docs.inaccel.com
+    - https://github.com/inaccel/helm
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/fpga-operator-2.7.4.tgz
+    version: 2.7.4
+  - annotations:
+      app.kubesphere.io/category: Infrastructure
+      app.kubesphere.io/display-name: InAccel FPGA Operator
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Documentation
+          url: https://docs.inaccel.com
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: "2.1"
+    created: "2021-11-24T12:48:13.482556686Z"
+    dependencies:
+    - alias: fpga-discovery
+      condition: fpga-discovery.enabled
+      name: node-feature-discovery
+      repository: https://kubernetes-sigs.github.io/node-feature-discovery/charts
+      version: 0.9.0
+    description: Simplifying FPGA management in Kubernetes
+    digest: 5f1e04c63d2679ac069c546cb58f501738a2e9a1c1544f4818fa071f04756995
+    home: https://inaccel.com
+    icon: https://en.gravatar.com/userimage/147236320/2a11cd2992b4521ec287587f03fae35c.png?size=1250
+    keywords:
+    - fpga
+    - infrastructure
+    kubeVersion: '>= 1.18.0-0'
+    maintainers:
+    - email: info@inaccel.com
+      name: InAccel
+    name: fpga-operator
+    sources:
+    - https://docs.inaccel.com
+    - https://github.com/inaccel/helm
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/fpga-operator-2.6.1.tgz
+    version: 2.6.1
+  jh-gitlab:
+  - apiVersion: v1
+    appVersion: 14.8.2
+    created: "2022-04-15T02:01:10.296808945Z"
+    dependencies:
+    - name: gitlab
+      repository: ""
+      version: '*.*.*'
+    - name: certmanager-issuer
+      repository: ""
+      version: '*.*.*'
+    - name: minio
+      repository: ""
+      version: '*.*.*'
+    - name: registry
+      repository: ""
+      version: '*.*.*'
+    - alias: certmanager
+      condition: certmanager.install
+      name: cert-manager
+      repository: https://charts.jetstack.io/
+      version: 1.5.4
+    - condition: prometheus.install
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 15.0.4
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.9.4
+    - condition: gitlab-runner.install
+      name: gitlab-runner
+      repository: https://charts.gitlab.io/
+      version: 0.38.0
+    - condition: global.grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.9.1
+    - condition: redis.install
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.3.4
+    - condition: nginx-ingress.enabled
+      name: nginx-ingress
+      repository: ""
+      version: '*.*.*'
+    description: Web-based Git-repository manager with wiki and issue-tracking features.
+    digest: da3d9ac0b3920266d59edf1d37cccc7d5aa227571a30069be920516c4d0f5fcb
+    home: https://about.gitlab.cn/
+    icon: https://jihulab.com/gitlab-cn/charts/gitlab/raw/main-jh/icons/helm-chart-icon.svg
+    keywords:
+    - gitlab
+    maintainers:
+    - email: support@gitlab.cn
+      name: JiHu(GitLab)
+    name: jh-gitlab
+    sources:
+    - https://jihulab.com/gitlab-cn/charts/gitlab
+    urls:
+    - https://charts.kubesphere.io/stable/jh-gitlab-5.9.2.tgz
+    version: 5.9.2
+  juicefs:
+  - apiVersion: v2
+    appVersion: 0.15.0
+    created: "2022-06-24T01:48:39.460565918Z"
+    description: A Helm chart for JuiceFS CSI Driver
+    digest: 238db28b8ac107810769be8aab184f93ae14dc8958bdc974521ab259d1c01b7c
+    home: https://github.com/juicedata/juicefs
+    icon: https://s.juicefs.com/static/jfs/logo.svg
+    keywords:
+    - juicefs
+    - csi
+    kubeVersion: '>=1.14.0-0'
+    maintainers:
+    - email: team@juicedata.io
+      name: Juicedata Inc
+    name: juicefs
+    sources:
+    - https://github.com/juicedata/juicefs
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/juicefs-0.11.0.tgz
+    version: 0.11.0
+  - apiVersion: v2
+    appVersion: 0.13.2
+    created: "2022-05-07T02:25:59.636717784Z"
+    description: A Helm chart for JuiceFS CSI Driver
+    digest: 76c03936231cc2e11bbb1f98f496d5af0dcf2b8c7598e78bd1b11cb3cdf523ab
+    home: https://github.com/juicedata/juicefs
+    icon: https://s.juicefs.com/static/jfs/logo.svg
+    keywords:
+    - juicefs
+    - csi
+    kubeVersion: '>=1.14.0-0'
+    maintainers:
+    - email: team@juicedata.io
+      name: Juicedata Inc
+    name: juicefs
+    sources:
+    - https://github.com/juicedata/juicefs
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/juicefs-0.9.2.tgz
+    version: 0.9.2
+  - apiVersion: v2
+    appVersion: 0.11.0
+    created: "2021-11-24T15:14:19.305212363Z"
+    description: A Helm chart for JuiceFS CSI Driver
+    digest: 6c0f23b4c11247957d349f066d268e67bb9e6191cd06544c7551d2eed10b4bb3
+    home: https://github.com/juicedata/juicefs
+    icon: https://s.juicefs.com/static/jfs/logo.svg
+    keywords:
+    - juicefs
+    - csi
+    kubeVersion: '>=1.14.0-0'
+    maintainers:
+    - email: team@juicedata.io
+      name: Juicedata Inc
+    name: juicefs
+    sources:
+    - https://github.com/juicedata/juicefs
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/juicefs-0.7.0.tgz
+    version: 0.7.0
+  - apiVersion: v2
+    appVersion: 0.10.6
+    created: "2021-11-11T09:02:02.1052406Z"
+    description: A Helm chart for JuiceFS CSI Driver
+    digest: 997e39950ff48d9e8afd997d37546d51d6f5a3bd70fcf5c3c1caf66f2602a244
+    home: https://github.com/juicedata/juicefs
+    icon: https://s.juicefs.com/static/jfs/logo.svg
+    keywords:
+    - juicefs
+    - csi
+    kubeVersion: '>=1.14.0-0'
+    maintainers:
+    - email: team@juicedata.io
+      name: Juicedata Inc
+    name: juicefs
+    sources:
+    - https://github.com/juicedata/juicefs
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/juicefs-0.6.1.tgz
+    version: 0.6.1
+  meshery:
+  - apiVersion: v2
+    created: "2022-05-27T07:53:12.087134882Z"
+    dependencies:
+    - condition: meshery-istio.enabled
+      name: meshery-istio
+      repository: ""
+      version: 0.5.0
+    - condition: meshery-linkerd.enabled
+      name: meshery-linkerd
+      repository: ""
+      version: 0.5.0
+    - condition: meshery-consul.enabled
+      name: meshery-consul
+      repository: ""
+      version: 0.5.0
+    - condition: meshery-kuma.enabled
+      name: meshery-kuma
+      repository: ""
+      version: 0.5.0
+    - condition: meshery-osm.enabled
+      name: meshery-osm
+      repository: ""
+      version: 0.5.0
+    - condition: meshery-nsm.enabled
+      name: meshery-nsm
+      repository: ""
+      version: 0.5.0
+    - condition: meshery-traefik-mesh.enabled
+      name: meshery-traefik-mesh
+      repository: ""
+      version: 0.5.0
+    - condition: meshery-cpx.enabled
+      name: meshery-cpx
+      repository: ""
+      version: 0.5.0
+    - condition: meshery-nginx-sm.enabled
+      name: meshery-nginx-sm
+      repository: ""
+      version: 0.5.0
+    - condition: meshery-app-mesh.enabled
+      name: meshery-app-mesh
+      repository: ""
+      version: 0.5.0
+    - condition: meshery-operator.enabled
+      name: meshery-operator
+      repository: ""
+      version: 0.5.0
+    - condition: meshery-broker.enabled
+      name: meshery-broker
+      repository: ""
+      version: 0.5.0
+    - condition: meshery-meshsync.enabled
+      name: meshery-meshsync
+      repository: ""
+      version: 0.5.0
+    - condition: meshery-cilium.enabled
+      name: meshery-cilium
+      repository: ""
+      version: 0.5.0
+    - condition: meshery-perf.enabled
+      name: meshery-perf
+      repository: ""
+      version: 0.5.0
+    description: Meshery chart for deploying Meshery and Meshery's adapters.
+    digest: 2a743f78cb342c624cee734455fa6cf381c4081d594715689429a191378ec80e
+    icon: https://meshery.io/images/logos/meshery-logo.png
+    keywords:
+    - meshery
+    - meshery-istio
+    - meshery-linkerd
+    - meshery-consul
+    - meshery-kuma
+    - meshery-osm
+    - meshery-nsm
+    - meshery-traefik-mesh
+    - meshery-cpx
+    - meshery-nginx-sm
+    - meshery-app-mesh
+    - meshery-operator
+    - meshery-broker
+    - meshery-meshsync
+    maintainers:
+    - email: maintainers@meshery.io
+      name: Meshery Authors
+    name: meshery
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/meshery-0.5.0.tgz
+    version: 0.5.0
+  nocalhost:
+  - annotations:
+      category: App Definition and Development
+    apiVersion: v2
+    appVersion: v0.6.9
+    created: "2021-12-20T14:42:59.266715532Z"
+    dependencies:
+    - name: mariadb
+      repository: https://nocalhost-helm.pkg.coding.net/nocalhost/helm
+      version: 9.0.1
+    description: Nocalhost is Cloud Native Dev Environment.
+    digest: 8ddb5e9100b5d03bcc84d5f28f1d7bece20847d6e2f3266a51e871320be7bab5
+    home: https://nocalhost.dev
+    icon: https://nocalhost.dev/img/icon_helmchart.png
+    keywords:
+    - nocalhost
+    - nhctl
+    - kubernetes
+    - develop
+    - telepresence
+    - skaffold
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - name: Nocalhost
+      url: https://github.com/nocalhost/nocalhost
+    name: nocalhost
+    sources:
+    - https://github.com/nocalhost/nocalhost
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/nocalhost-0.6.9.tgz
+    version: 0.6.9
+  - annotations:
+      category: App Definition and Development
+    apiVersion: v2
+    appVersion: v0.6.4
+    created: "2021-11-08T04:27:48.620871967Z"
+    dependencies:
+    - name: mariadb
+      repository: https://nocalhost-helm.pkg.coding.net/nocalhost/helm
+      version: 9.0.1
+    description: Nocalhost is Cloud Native Dev Environment.
+    digest: c108d07895a0373f00791bfb84f0c2266e74ff673b727cd7a7de3c2bfc0a26f7
+    home: https://nocalhost.dev
+    icon: https://nocalhost.dev/img/icon_helmchart.png
+    keywords:
+    - nocalhost
+    - nhctl
+    - kubernetes
+    - develop
+    - telepresence
+    - skaffold
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - name: Nocalhost
+      url: https://github.com/nocalhost/nocalhost
+    name: nocalhost
+    sources:
+    - https://github.com/nocalhost/nocalhost
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/nocalhost-0.6.4.tgz
+    version: 0.6.4
+  - annotations:
+      category: App Definition and Development
+    apiVersion: v2
+    appVersion: v0.6.2
+    created: "2021-10-19T09:07:35.260093417Z"
+    dependencies:
+    - name: mariadb
+      repository: https://nocalhost-helm.pkg.coding.net/nocalhost/helm
+      version: 9.0.1
+    description: Nocalhost is Cloud Native Dev Environment.
+    digest: 6b392e3d8452b6534ddaa0fd43b84c835b2a28047496ca1b12f6c7205b8d33f2
+    home: https://nocalhost.dev
+    icon: https://nocalhost.dev/img/icon_helmchart.png
+    keywords:
+    - nocalhost
+    - nhctl
+    - kubernetes
+    - develop
+    - telepresence
+    - skaffold
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - name: Nocalhost
+      url: https://github.com/nocalhost/nocalhost
+    name: nocalhost
+    sources:
+    - https://github.com/nocalhost/nocalhost
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/nocalhost-0.6.2.tgz
+    version: 0.6.2
+  - annotations:
+      category: App Definition and Development
+    apiVersion: v2
+    appVersion: v0.5.7
+    created: "2021-10-18T11:59:21.804409957Z"
+    dependencies:
+    - name: mariadb
+      repository: https://nocalhost-helm.pkg.coding.net/nocalhost/helm
+      version: 9.0.1
+    description: Nocalhost is Cloud Native Dev Environment.
+    digest: 5faa71d6b34b018662b2b553ec721762a32aa1786a330baee8efd526e15c6aab
+    home: https://nocalhost.dev
+    icon: https://nocalhost.dev/img/favicon.ico
+    keywords:
+    - nocalhost
+    - nhctl
+    - kubernetes
+    - develop
+    - telepresence
+    - skaffold
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - name: Nocalhost
+      url: https://github.com/nocalhost/nocalhost
+    name: nocalhost
+    sources:
+    - https://github.com/nocalhost/nocalhost
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/nocalhost-0.5.7.tgz
+    version: 0.5.7
+  openelb:
+  - apiVersion: v2
+    appVersion: 0.4.4
+    created: "2022-04-27T08:02:11.815586908Z"
+    description: Bare Metal Load-balancer for Kubernetes Cluster
+    digest: 8d380d4fd6bc3a4f311048b482aafb4fe69f6187e655e5511343cfbc0d5a8380
+    icon: https://github.com/openelb/openelb/blob/master/doc/logo/openelb-vertical.svg
+    maintainers:
+    - email: kubesphere@gmail.com
+      name: KubeSphere
+    name: openelb
+    sources:
+    - https://github.com/openelb/openelb
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/openelb-0.2.5.tgz
+    version: 0.2.5
+  pulsar:
+  - apiVersion: v2
+    appVersion: 2.7.4
+    created: "2022-03-28T13:22:07.831995429Z"
+    description: Apache Pulsar Helm chart for Kubernetes
+    digest: 5a04b1c01027528dfa9dc9b8ecbb39fc3b63b624cf72a7a1f9839f1a169fa0ce
+    home: https://pulsar.apache.org
+    icon: http://pulsar.apache.org/img/pulsar.svg
+    maintainers:
+    - email: dev@pulsar.apache.org
+      name: The Apache Pulsar Team
+    name: pulsar
+    sources:
+    - https://github.com/apache/pulsar
+    urls:
+    - https://charts.kubesphere.io/stable/pulsar-2.7.13.tgz
+    version: 2.7.13
+  qiming-operator:
+  - apiVersion: v2
+    appVersion: 2.5.2
+    created: "2022-05-30T07:52:51.462760029Z"
+    description: ys1000 provides data protection for cloud native applications
+    digest: 5cec9cf183d3149f2254bedf2ded7f062589901f411c9b48fffc14ace3b6a2d1
+    name: qiming-operator
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/qiming-operator-2.5.2.tgz
+    version: 2.5.2
+  - apiVersion: v2
+    appVersion: 2.2.2
+    created: "2022-03-08T09:17:40.157557602Z"
+    description: ys1000 provides data protection and management services for cloud
+      native applications.
+    digest: 517e0e14476c7b6a39837f6a699698fb989d2f3de58c923f8c409d0a4a540639
+    name: qiming-operator
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/qiming-operator-2.2.2.tgz
+    version: 2.2.2
+generated: "2022-07-07T09:25:40.699687232Z"
