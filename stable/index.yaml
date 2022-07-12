@@ -3,10 +3,10 @@ entries:
   chaos-mesh:
   - apiVersion: v2
     appVersion: 2.0.4
-    created: "2022-07-12T08:26:06.490849292Z"
+    created: "2022-07-12T08:41:59.328317569Z"
     description: Chaos Mesh® is a cloud-native Chaos Engineering platform that orchestrates
       chaos on Kubernetes environments.
-    digest: 3a8e69a003d4c2cb5fb2591f9d75093d07132fdef56cea2acf13beeb3097abba
+    digest: c35a2f380bcadaab06237d03c4c899ea2e8a353e715790020278f3caff40a200
     home: https://chaos-mesh.org
     icon: https://raw.githubusercontent.com/pingcap/chaos-mesh/master/static/logo.svg
     keywords:
@@ -654,4 +654,4 @@ entries:
     urls:
     - https://charts.kubesphere.io/stable/qiming-operator-2.2.2.tgz
     version: 2.2.2
-generated: "2022-07-12T08:26:06.481130788Z"
+generated: "2022-07-12T08:41:59.319456024Z"
