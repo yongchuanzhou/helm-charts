@@ -136,6 +136,23 @@ entries:
     urls:
     - https://charts.kubesphere.io/test/biz-engine-0.1.0.tgz
     version: 0.1.0
+  ccm-qingcloud:
+  - apiVersion: v2
+    appVersion: 1.4.12
+    created: "2022-07-12T08:26:06.984844154Z"
+    description: A Helm chart for qingcloud cloud controller manager
+    digest: ad3eb4f37f70f6a46a7b6b7658e5481e793c8023a6a7473dbd9c032133b8e656
+    home: https://github.com/yunify/qingcloud-cloud-controller-manager
+    keywords:
+    - qingcloud
+    - ccm
+    kubeVersion: '>=1.17.0-0'
+    name: ccm-qingcloud
+    sources:
+    - https://github.com/yunify/qingcloud-cloud-controller-manager
+    urls:
+    - https://charts.kubesphere.io/test/ccm-qingcloud-0.1.0.tgz
+    version: 0.1.0
   clickhouse:
   - annotations:
       category: Database
@@ -179,6 +196,22 @@ entries:
     type: application
     urls:
     - https://charts.kubesphere.io/test/clickhouse-0.1.0.tgz
+    version: 0.1.0
+  cni-hostnic:
+  - apiVersion: v2
+    appVersion: v1.0.3
+    created: "2022-07-12T08:26:06.985396166Z"
+    description: A Helm chart for qingcloud hostnic cni
+    digest: c5819abcc9bb08bb2bcb004081f3723b412521082a303fae080b96e4d8cc5ef8
+    home: https://github.com/cumirror/hostnic-cni
+    keywords:
+    - qingcloud
+    - hostnic
+    - cni
+    name: cni-hostnic
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/cni-hostnic-0.1.0.tgz
     version: 0.1.0
   csi-neonsan:
   - apiVersion: v2
@@ -1988,4 +2021,4 @@ entries:
     urls:
     - https://charts.kubesphere.io/test/xenondb-1.0.0.tgz
     version: 1.0.0
-generated: "2022-04-27T14:26:47.435022713Z"
+generated: "2022-07-12T08:26:06.984314043Z"
