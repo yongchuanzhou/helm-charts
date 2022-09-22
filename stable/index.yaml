@@ -3,10 +3,10 @@ entries:
   chaos-mesh:
   - apiVersion: v2
     appVersion: 2.0.4
-    created: "2022-09-22T07:24:58.813468626Z"
+    created: "2022-09-22T07:39:16.874200215Z"
     description: Chaos Mesh® is a cloud-native Chaos Engineering platform that orchestrates
       chaos on Kubernetes environments.
-    digest: 3773ab35908ab525dc95859662d61226a711dbc6855c4125ff9f3690d55b7712
+    digest: d676095e43e2b301042aee3c629f0bc4b57275a381a82e1bdfd1aad304e5ec56
     home: https://chaos-mesh.org
     icon: https://raw.githubusercontent.com/pingcap/chaos-mesh/master/static/logo.svg
     keywords:
@@ -123,7 +123,7 @@ entries:
   deepflow:
   - apiVersion: v2
     appVersion: 6.1.2
-    created: "2022-09-22T07:24:58.829325565Z"
+    created: "2022-09-22T07:39:16.887492056Z"
     dependencies:
     - condition: deepflow-agent.enabled
       name: deepflow-agent
@@ -140,7 +140,7 @@ entries:
       repository: https://grafana.github.io/helm-charts
       version: 6.*.*
     description: An automated observability platform for cloud-native developers.
-    digest: b8997cd1e22bfd864ead5cdc9251dca7c8d10ce0d8505f84344d65b99883f1a0
+    digest: 7426df6409d9f063c0e1306141a2c9d977864b21738ed7a0dc70f4e61ac0998b
     home: https://github.com/deepflowys/deepflow
     icon: https://raw.githubusercontent.com/deepflowys/deepflow-charts/main/deepflow.png
     keywords:
@@ -833,4 +833,4 @@ entries:
     urls:
     - https://charts.kubesphere.io/stable/qiming-operator-2.2.2.tgz
     version: 2.2.2
-generated: "2022-09-22T07:24:58.801904024Z"
+generated: "2022-09-22T07:39:16.865252252Z"
