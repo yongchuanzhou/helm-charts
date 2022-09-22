@@ -3,10 +3,10 @@ entries:
   chaos-mesh:
   - apiVersion: v2
     appVersion: 2.0.4
-    created: "2022-07-12T08:41:59.328317569Z"
+    created: "2022-09-22T07:24:58.813468626Z"
     description: Chaos Mesh® is a cloud-native Chaos Engineering platform that orchestrates
       chaos on Kubernetes environments.
-    digest: c35a2f380bcadaab06237d03c4c899ea2e8a353e715790020278f3caff40a200
+    digest: 3773ab35908ab525dc95859662d61226a711dbc6855c4125ff9f3690d55b7712
     home: https://chaos-mesh.org
     icon: https://raw.githubusercontent.com/pingcap/chaos-mesh/master/static/logo.svg
     keywords:
@@ -42,6 +42,34 @@ entries:
     - https://charts.kubesphere.io/stable/chaos-mesh-2.0.3.tgz
     version: 2.0.3
   crane:
+  - annotations:
+      app.kubesphere.io/category: Continuous Optimization
+    apiVersion: v2
+    appVersion: v0.5.2
+    created: "2022-08-23T07:02:56.355170887Z"
+    description: Crane (FinOps Crane) is an opensource project which manages cloud
+      resource on Kubernetes stack, it is inspired by FinOps concepts.
+    digest: fad71a2c743c4c38ccf46430a924ba22b84e3efc6fcd024b32a871236cc20ac0
+    home: https://github.com/gocrane/crane
+    icon: https://docs.gocrane.io/dev/images/crane.svg
+    keywords:
+    - kubernetes
+    - finops
+    - autoscaling
+    - hpa
+    - vpa
+    - resources
+    - qos
+    maintainers:
+    - email: brilliantroad@126.com
+      name: qmhu
+    name: crane
+    sources:
+    - https://github.com/gocrane/crane
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/crane-0.5.2.tgz
+    version: 0.5.2
   - annotations:
       app.kubesphere.io/category: Continuous Optimization
     apiVersion: v2
@@ -92,6 +120,135 @@ entries:
     urls:
     - https://charts.kubesphere.io/stable/crane-0.5.0.tgz
     version: 0.5.0
+  deepflow:
+  - apiVersion: v2
+    appVersion: 6.1.2
+    created: "2022-09-22T07:24:58.829325565Z"
+    dependencies:
+    - condition: deepflow-agent.enabled
+      name: deepflow-agent
+      repository: ""
+      version: '*.*.*'
+    - name: clickhouse
+      repository: ""
+      version: '*.*.*'
+    - name: mysql
+      repository: ""
+      version: '*.*.*'
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.*.*
+    description: An automated observability platform for cloud-native developers.
+    digest: b8997cd1e22bfd864ead5cdc9251dca7c8d10ce0d8505f84344d65b99883f1a0
+    home: https://github.com/deepflowys/deepflow
+    icon: https://raw.githubusercontent.com/deepflowys/deepflow-charts/main/deepflow.png
+    keywords:
+    - deepflow
+    kubeVersion: '>=1.16.0-0'
+    name: deepflow
+    sources:
+    - https://github.com/deepflowys/deepflow
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/deepflow-0.1.031.tgz
+    version: 0.1.031
+  - apiVersion: v2
+    appVersion: 6.1.1
+    created: "2022-08-17T03:51:22.457006259Z"
+    dependencies:
+    - condition: deepflow-agent.enabled
+      name: deepflow-agent
+      repository: ""
+      version: '*.*.*'
+    - name: clickhouse
+      repository: ""
+      version: '*.*.*'
+    - name: mysql
+      repository: ""
+      version: '*.*.*'
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.32.*
+    description: An automated observability platform for cloud-native developers.
+    digest: d1080bd47010456afa543b5cbd37b2d0dadc0ff4c5f222617f61c7c38be8b52a
+    home: https://github.com/deepflowys/deepflow
+    icon: https://raw.githubusercontent.com/deepflowys/deepflow-charts/main/deepflow.png
+    keywords:
+    - deepflow
+    kubeVersion: '>=1.16.0-0'
+    name: deepflow
+    sources:
+    - https://github.com/deepflowys/deepflow
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/deepflow-0.1.012.tgz
+    version: 0.1.012
+  - apiVersion: v2
+    appVersion: 6.1.1
+    created: "2022-08-16T14:43:20.861749795Z"
+    dependencies:
+    - condition: deepflow-agent.enabled
+      name: deepflow-agent
+      repository: ""
+      version: '*.*.*'
+    - name: clickhouse
+      repository: ""
+      version: '*.*.*'
+    - name: mysql
+      repository: ""
+      version: '*.*.*'
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.32.*
+    description: An automated observability platform for cloud-native developers.
+    digest: ea4d0c40d6d8e0765d0caef9f4288ef04fa369b64db5879de7051e6af36dd114
+    home: https://github.com/deepflowys/deepflow
+    icon: https://raw.githubusercontent.com/deepflowys/deepflow-charts/main/deepflow.png
+    keywords:
+    - deepflow
+    kubeVersion: '>=1.16.0-0'
+    name: deepflow
+    sources:
+    - https://github.com/deepflowys/deepflow
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/deepflow-0.1.011.tgz
+    version: 0.1.011
+  - apiVersion: v2
+    appVersion: 6.1.1
+    created: "2022-08-12T02:06:03.532133297Z"
+    dependencies:
+    - condition: deepflow-agent.enabled
+      name: deepflow-agent
+      repository: ""
+      version: '*.*.*'
+    - name: clickhouse
+      repository: ""
+      version: '*.*.*'
+    - name: mysql
+      repository: ""
+      version: '*.*.*'
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.32.*
+    description: An automated observability platform for cloud-native developers.
+    digest: f63353abaff0b434b1330ecb0bc37eb229526cba3dcacd8dfaea966b83d0d862
+    home: https://github.com/deepflowys/deepflow
+    icon: https://raw.githubusercontent.com/deepflowys/deepflow-charts/main/deepflow.png
+    keywords:
+    - deepflow
+    kubeVersion: '>=1.16.0-0'
+    name: deepflow
+    sources:
+    - https://github.com/deepflowys/deepflow
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/deepflow-0.1.006.tgz
+    version: 0.1.006
   easegress:
   - apiVersion: v2
     created: "2022-02-28T02:31:31.816082078Z"
@@ -289,6 +446,28 @@ entries:
     - https://charts.kubesphere.io/stable/jh-gitlab-5.9.2.tgz
     version: 5.9.2
   juicefs:
+  - apiVersion: v2
+    appVersion: 0.16.1
+    created: "2022-08-23T07:02:56.356410409Z"
+    description: A Helm chart for JuiceFS CSI Driver
+    digest: 2017208b258acb711f11dc6865894cea3e85d768051600a0b328ff8780c5eb24
+    home: https://github.com/juicedata/juicefs
+    icon: https://s.juicefs.com/static/jfs/logo.svg
+    keywords:
+    - juicefs
+    - csi
+    kubeVersion: '>=1.14.0-0'
+    maintainers:
+    - email: team@juicedata.io
+      name: Juicedata Inc.
+      url: https://juicefs.com
+    name: juicefs
+    sources:
+    - https://github.com/juicedata/juicefs
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/juicefs-0.12.1.tgz
+    version: 0.12.1
   - apiVersion: v2
     appVersion: 0.15.0
     created: "2022-06-24T01:48:39.460565918Z"
@@ -654,4 +833,4 @@ entries:
     urls:
     - https://charts.kubesphere.io/stable/qiming-operator-2.2.2.tgz
     version: 2.2.2
-generated: "2022-07-12T08:41:59.319456024Z"
+generated: "2022-09-22T07:24:58.801904024Z"
