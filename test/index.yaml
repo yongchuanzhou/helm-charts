@@ -1,5 +1,33 @@
 apiVersion: v1
 entries:
+  antrea:
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/operator: "false"
+      artifacthub.io/prerelease: "false"
+    apiVersion: v2
+    appVersion: 1.9.0
+    created: "2022-12-27T08:49:42.861113501Z"
+    description: Kubernetes networking based on Open vSwitch
+    digest: 020b8d66827b9c194873058150813cbb47d8ccc6b3c8676ee691accd0dad4367
+    home: https://antrea.io/
+    icon: https://raw.githubusercontent.com/antrea-io/antrea/main/docs/assets/logo/antrea_logo.svg
+    keywords:
+    - Kubernetes
+    - CNCF
+    - Networking
+    - CNI
+    - Security
+    - Open vSwitch
+    - OVS
+    kubeVersion: '>= 1.16.0-0'
+    name: antrea
+    sources:
+    - https://github.com/antrea-io/antrea
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/antrea-1.9.0.tgz
+    version: 1.9.0
   apisix:
   - annotations:
       app.kubesphere.io/category: Networking
@@ -214,6 +242,28 @@ entries:
     - https://charts.kubesphere.io/test/cni-hostnic-0.1.0.tgz
     version: 0.1.0
   csi-neonsan:
+  - apiVersion: v2
+    appVersion: 1.2.2
+    created: "2022-10-17T05:21:11.209995443Z"
+    description: A Helm chart for NeonSAN CSI Driver
+    digest: 0135b5888f66bed5b822b24c43252b00602f1361b26d5e94cab531e89fde4d64
+    home: https://github.com/yunify/qingstor-csi
+    icon: https://s3.qingcloud.com/files/2020/01/qing-stor-neon-san.png
+    keywords:
+    - neonsan
+    - csi
+    kubeVersion: '>=1.17.0-0'
+    maintainers:
+    - email: arminzhang@yunify.com
+      name: Min Zhang
+    - email: yangzhou@yunify.com
+      name: Yang Zhou
+    name: csi-neonsan
+    sources:
+    - https://github.com/yunify/qingstor-csi
+    urls:
+    - https://charts.kubesphere.io/test/csi-neonsan-1.2.7.tgz
+    version: 1.2.7
   - apiVersion: v2
     appVersion: 1.2.1
     created: "2021-09-08T10:23:01.031271112Z"
@@ -879,6 +929,27 @@ entries:
     urls:
     - https://charts.kubesphere.io/test/csi-qingcloud-1.2.0.tgz
     version: 1.2.0
+  curvefs-csi:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-10-17T07:04:07.464218441Z"
+    description: A Helm chart for CurveFs CSI Driver
+    digest: ee0516ff48ca549e100f29be5c9f0cd4c46d1cf9dc4fabcfd316617d41cbfee8
+    home: https://github.com/opencurve/curvefs-csi
+    keywords:
+    - curvefs
+    - csi
+    kubeVersion: '>=1.18.0-0'
+    maintainers:
+    - email: h0hmjcn@gmail.com
+      name: h0hmj
+    name: curvefs-csi
+    sources:
+    - https://github.com/opencurve/curvefs-csi
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/curvefs-csi-0.1.0.tgz
+    version: 0.1.0
   etcd:
   - annotations:
       app.kubesphere.io/category: Database & Cache
@@ -948,6 +1019,258 @@ entries:
     urls:
     - https://charts.kubesphere.io/test/etcd-0.1.0.tgz
     version: 0.1.0
+  flow-aggregator:
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/operator: "false"
+      artifacthub.io/prerelease: "false"
+    apiVersion: v2
+    appVersion: 1.9.0
+    created: "2022-12-27T08:49:42.86184101Z"
+    description: Antrea Flow Aggregator
+    digest: 95326541c9f06b46dea594837e03856a6cf9f19662c2eebe6a5c9a7f4cfe02c0
+    home: https://antrea.io/
+    icon: https://raw.githubusercontent.com/antrea-io/antrea/main/docs/assets/logo/antrea_logo.svg
+    keywords:
+    - Kubernetes
+    - CNCF
+    - Networking
+    - CNI
+    - Security
+    - Open vSwitch
+    - OVS
+    - Antrea
+    - Observability
+    - Flow Visibility
+    - Flow Aggregator
+    kubeVersion: '>= 1.16.0-0'
+    name: flow-aggregator
+    sources:
+    - https://github.com/antrea-io/antrea
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/flow-aggregator-1.9.0.tgz
+    version: 1.9.0
+  hertzbeat:
+  - apiVersion: v2
+    appVersion: v1.4.1
+    created: "2023-10-11T06:27:36.014573748Z"
+    description: An open-source, real-time monitoring system with custom monitoring,
+      high performance cluster and agentless capabilities.
+    digest: 0d18ee49e964c40bbbfe257563db3c1d3cbc85fed6b00cff89a3d3bb6f4cabe4
+    home: https://hertzbeat.com/
+    icon: https://raw.githubusercontent.com/dromara/hertzbeat/master/home/static/img/hertzbeat-logo.png
+    maintainers:
+    - email: tomsun28@outlook.com
+      name: tom
+    name: hertzbeat
+    sources:
+    - https://github.com/dromara/hertzbeat
+    - https://charts.hertzbeat.com
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/hertzbeat-1.4.1.tgz
+    version: 1.4.1
+  - apiVersion: v2
+    appVersion: v1.4.0
+    created: "2023-09-05T10:03:35.957556755Z"
+    description: An open-source, real-time monitoring system with custom monitoring,
+      high performance cluster and agentless capabilities.
+    digest: 83d590ce26d147fcb2b9e3eb155e3730bb091ba99de4620896f47a91e666f05b
+    home: https://hertzbeat.com/
+    icon: https://raw.githubusercontent.com/dromara/hertzbeat/master/home/static/img/hertzbeat-logo.png
+    maintainers:
+    - email: tomsun28@outlook.com
+      name: tom
+    name: hertzbeat
+    sources:
+    - https://github.com/dromara/hertzbeat
+    - https://charts.hertzbeat.com
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/hertzbeat-1.4.0.tgz
+    version: 1.4.0
+  ks-core:
+  - apiVersion: v2
+    appVersion: v4.1.0-dev
+    created: "2023-12-18T03:26:03.10145441Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 16410d0920494c70549782207ee171c1c2d67d71de2f6afbbc38c1ba104adb88
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.5.1.tgz
+    version: 0.5.1
+  - apiVersion: v2
+    appVersion: v4.1.0-dev
+    created: "2023-11-24T03:55:29.914147571Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: e2880db2b23d8dcceb3d87db662885bcc9e04c35933f94e9b7577c33a4376e1d
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.5.0.tgz
+    version: 0.5.0
+  - apiVersion: v2
+    appVersion: v4.0.0
+    created: "2023-08-12T14:18:55.68623948Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 360ef9f7c3aa5791917373bf0367b1fa9629ff73ef6a67985c9b571f5c6aacd3
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
+    appVersion: v4.0.0-rc.4
+    created: "2023-08-11T07:38:41.604806399Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: e50b85750180c9859e22425941665da0c78e8a17d37334b1fed1bb592c119ec9
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.3.10.tgz
+    version: 0.3.10
+  - apiVersion: v2
+    appVersion: v4.0.0-rc.3
+    created: "2023-08-10T14:28:51.764476735Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 3a0266e850279f08d9d772884309882b7241b7ab80cff98a9ed8bb3044d8a91e
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.3.9.tgz
+    version: 0.3.9
+  - apiVersion: v2
+    appVersion: v4.0.0-rc.2
+    created: "2023-08-09T16:12:12.415678868Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: a0fe59c73d066037d9c9408e3309f04b17d938f2bf1875465694a98b8b3ce798
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.3.8.tgz
+    version: 0.3.8
+  - apiVersion: v2
+    appVersion: v4.0.0-rc.1
+    created: "2023-08-07T08:29:18.818114073Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: d8aec1b7ee0326b54a1a28e7e1711e2a905b9b39e6331afd0cca038811374928
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.3.7.tgz
+    version: 0.3.7
+  - apiVersion: v2
+    appVersion: v4.0.0-rc.0
+    created: "2023-08-03T11:11:08.880517776Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 2bb2e2cf18cd06afa6290d52b0f40ba4eecf62a4134c007500dcb63d729c9587
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.3.6.tgz
+    version: 0.3.6
+  - apiVersion: v2
+    appVersion: v4.0.0-beta.5
+    created: "2023-08-02T02:45:41.154369613Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 59457084933a1a25ae2f374f8bd7ff98d6925e547295f4cd9324318162a10a3a
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.3.5.tgz
+    version: 0.3.5
+  - apiVersion: v2
+    appVersion: v4.0.0-beta.4
+    created: "2023-07-31T21:27:49.449954172Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: ce481922a1b41ccae71fdc4a5ecc794eca2761865d5e2be5397df8c45844c0a2
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.3.4.tgz
+    version: 0.3.4
+  - apiVersion: v2
+    appVersion: v4.0.0-beta.3
+    created: "2023-07-28T17:06:36.335427263Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 634a7446e5a8bd1d466608d5beacfab808ad26368fc4f804dc84eb05ab0b24bd
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.3.3.tgz
+    version: 0.3.3
+  - apiVersion: v2
+    appVersion: v4.0.0-beta.2
+    created: "2023-07-24T09:44:07.544249942Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 8afaf2bafc61df836083ce40ceb5ac46ec856ba5a54c1b2423d51cb634fed85e
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.3.2.tgz
+    version: 0.3.2
+  - apiVersion: v2
+    appVersion: v4.0.0-beta.1
+    created: "2023-07-18T06:30:58.608895131Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 525bc64855a924159869f4e5876845887ceb56d961af2c09a75a19b028004c42
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    appVersion: v4.0.0-beta.0
+    created: "2023-07-11T05:55:52.805063989Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 69db1449fa14a294b216b807e76d3c581b358790d9ee55d407b092b0b419944b
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: v4.0.0-alpha.2
+    created: "2023-03-17T06:18:34.116191613Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: bc02072f674aa46d005e9acc247b457b7c69747dfe36c364e04779b026d9c80a
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
+    appVersion: v4.0.0-alpha.1
+    created: "2023-02-20T03:57:35.696000251Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: b3e5d37e3ac2b2deb58155a31c71756edd5677a961677d7c1228e08895821d21
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: v4.0.0-alpha.1
+    created: "2023-02-17T03:41:02.409709233Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: a93622cadbf1132cb076bd9cd3b7a78fdc2e2104b15dd2318a9049f23bc1c33a
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: v4.0.0-alpha.1
+    created: "2022-11-03T02:39:20.7275161Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: f037f20ed66c1979a2953a6c286766282b643381946062f1305b9f4a85f67d53
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.2.0.tgz
+    version: 0.2.0
   ks-installer:
   - apiVersion: v2
     appVersion: 3.2.1
@@ -1209,6 +1532,31 @@ entries:
     urls:
     - https://charts.kubesphere.io/test/mongodb-0.1.3.tgz
     version: 0.1.3
+  mysql:
+  - annotations:
+      app.kubesphere.io/category: Database & Cache
+    apiVersion: v2
+    appVersion: 5.7.33
+    created: "2022-11-03T02:40:19.053882341Z"
+    description: High Availability MySQL Cluster, Open Source.
+    digest: a96275d2940ccd47728a4b5f2ebb46f688285dbeb526a854bcd89468915aba84
+    home: https://github.com/radondb/radondb-mysql-kubernetes.git
+    keywords:
+    - xenondb
+    - MySQL HA
+    - database
+    - kubernetes
+    kubeVersion: '>=1.17.0-0'
+    maintainers:
+    - email: radondb@yunify.com
+      name: RadonDB
+    name: mysql
+    sources:
+    - https://github.com/radondb/xenondb
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/mysql-1.0.2.tgz
+    version: 1.0.2
   nacos:
   - apiVersion: v1
     appVersion: 1.4.1
@@ -1381,6 +1729,39 @@ entries:
     - https://charts.kubesphere.io/test/porter-0.1.1.tgz
     version: 0.1.1
   postgresql:
+  - annotations:
+      app.kubesphere.io/category: Database & Cache
+      app.kubesphere.io/display-name: RadonDB PostgreSQL
+    apiVersion: v2
+    appVersion: 11.11.0
+    created: "2022-11-03T02:40:19.058174895Z"
+    dependencies:
+    - name: common
+      repository: ""
+      version: 1.4.2
+    description: Chart for PostgreSQL with HA architecture.
+    digest: cbc3eee931d0284fff9c645f56c9a2dd7966011ca5e0c3437fc5800c617fa765
+    home: https://github.com/radondb/radondb-postgresql-kubernetes.git
+    keywords:
+    - postgresql
+    - repmgr
+    - pgpool
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    - high availability
+    maintainers:
+    - email: radondb@yunify.com
+      name: RadonDB
+    name: postgresql
+    sources:
+    - https://github.com/radondb/radondb-postgresql-kubernetes.git
+    - https://www.postgresql.org/
+    urls:
+    - https://charts.kubesphere.io/test/postgresql-1.0.3.tgz
+    version: 1.0.3
   - annotations:
       app.kubesphere.io/category: Database & Cache
     apiVersion: v1
@@ -2031,6 +2412,113 @@ entries:
     urls:
     - https://charts.kubesphere.io/test/snapshot-controller-0.1.0.tgz
     version: 0.1.0
+  theia:
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/operator: "false"
+      artifacthub.io/prerelease: "false"
+    apiVersion: v2
+    appVersion: 0.3.0
+    created: "2022-12-27T08:49:42.86671597Z"
+    description: Antrea Network Flow Visibility
+    digest: a5ff7883aab8d17a45095919b7327213c7ea9d56e79b991079e61888f98e0d98
+    home: https://antrea.io/
+    icon: https://raw.githubusercontent.com/antrea-io/antrea/main/docs/assets/logo/antrea_logo.svg
+    keywords:
+    - Kubernetes
+    - CNCF
+    - Networking
+    - CNI
+    - Security
+    - Open vSwitch
+    - OVS
+    - Antrea
+    - Observability
+    - Flow visibility
+    kubeVersion: '>= 1.16.0-0'
+    name: theia
+    sources:
+    - https://github.com/antrea-io/theia
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/theia-0.3.0.tgz
+    version: 0.3.0
+  vsphere-cpi:
+  - annotations:
+      category: cpi
+    apiVersion: v2
+    appVersion: v1.22.5
+    created: "2022-12-27T08:49:42.869657707Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: Helm chart for the vSphere-CPI
+    digest: 5830c77dc25ab3307720cd8d3313cd0eb704702266369c591cb2cca944a449c7
+    home: https://github.com/kubernetes/cloud-provider-vsphere
+    keywords:
+    - vSphere
+    - CPI
+    maintainers:
+    - email: maximilian.rink@telekom.de
+      name: Maximilian Rink
+    - email: myles@vmware.com
+      name: Myles Gray
+    name: vsphere-cpi
+    urls:
+    - https://charts.kubesphere.io/test/vsphere-cpi-1.3.0.tgz
+    version: 1.3.0
+  vsphere-csi:
+  - apiVersion: v2
+    appVersion: 2.7.0
+    created: "2022-12-27T08:49:42.882152261Z"
+    dependencies:
+    - condition: vsphere-cpi.enabled
+      name: vsphere-cpi
+      repository: https://vsphere-tmm.github.io/helm-charts
+      version: 1.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: A Helm chart for vSphere CSI Driver
+    digest: b4ced413854fcc8464e89f3c04bd3d54d41ff89cb686fdb0a450a96c0e824a52
+    home: https://github.com/kubernetes-sigs/vsphere-csi-driver
+    icon: https://raw.githubusercontent.com/kubernetes-sigs/vsphere-csi-driver/master/docs/images/vmware_logo.png
+    keywords:
+    - vsphere
+    - vmware
+    - csi
+    maintainers:
+    - email: maximilian.rink@telekom.de
+      name: Maximilian Rink
+    - email: myles@vmware.com
+      name: Myles Gray
+    name: vsphere-csi
+    sources:
+    - https://github.com/kubernetes-sigs/vsphere-csi-driver
+    urls:
+    - https://charts.kubesphere.io/test/vsphere-csi-2.5.0.tgz
+    version: 2.5.0
+  vsphere-csi-driver:
+  - apiVersion: v1
+    appVersion: 2.2.0
+    created: "2022-12-27T08:49:42.882745769Z"
+    description: vSphere Container Storage Interface (CSI) driver
+    digest: d39f8e26ee63c7e5746c964f31354791503cac38666616900e6781850d658135
+    home: https://vsphere-csi-driver.sigs.k8s.io
+    kubeVersion: '>=1.16.0'
+    maintainers:
+    - name: sebbrandt87
+    name: vsphere-csi-driver
+    sources:
+    - https://github.com/kubernetes-sigs/vsphere-csi-driver
+    urls:
+    - https://charts.kubesphere.io/test/vsphere-csi-driver-1.3.0.tgz
+    version: 1.3.0
   xenondb:
   - annotations:
       app.kubesphere.io/category: Database & Cache
@@ -2069,4 +2557,4 @@ entries:
     urls:
     - https://charts.kubesphere.io/test/xenondb-1.0.0.tgz
     version: 1.0.0
-generated: "2022-10-11T08:47:31.482656166Z"
+generated: "2023-12-18T03:26:03.097342627Z"
