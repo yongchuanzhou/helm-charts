@@ -244,6 +244,28 @@ entries:
   csi-neonsan:
   - apiVersion: v2
     appVersion: 1.2.2
+    created: "2024-03-25T09:42:51.742059707Z"
+    description: A Helm chart for NeonSAN CSI Driver
+    digest: 9f5b9fd00a20b6e4e4b8d849de68238427140d5d28970a1fb8aed23a75d10e7c
+    home: https://github.com/yunify/qingstor-csi
+    icon: https://s3.qingcloud.com/files/2020/01/qing-stor-neon-san.png
+    keywords:
+    - neonsan
+    - csi
+    kubeVersion: '>=1.17.0-0'
+    maintainers:
+    - email: arminzhang@yunify.com
+      name: Min Zhang
+    - email: yangzhou@yunify.com
+      name: Yang Zhou
+    name: csi-neonsan
+    sources:
+    - https://github.com/yunify/qingstor-csi
+    urls:
+    - https://charts.kubesphere.io/test/csi-neonsan-1.2.8.tgz
+    version: 1.2.8
+  - apiVersion: v2
+    appVersion: 1.2.2
     created: "2022-10-17T05:21:11.209995443Z"
     description: A Helm chart for NeonSAN CSI Driver
     digest: 0135b5888f66bed5b822b24c43252b00602f1361b26d5e94cab531e89fde4d64
@@ -451,9 +473,9 @@ entries:
   csi-qingcloud:
   - apiVersion: v2
     appVersion: 1.4.0
-    created: "2023-12-25T06:00:44.477528132Z"
+    created: "2023-12-25T06:04:39.543481648Z"
     description: A Helm chart for Qingcloud CSI Driver
-    digest: 11db70e40644ed61b676bd3ebcec707cc3fb48484b2587e12ecf387e0cfe360c
+    digest: 01768c6ecab7ee3ee0ccadf44103741c2b9a42e7fa6a9398dbadf20553847782
     home: https://github.com/yunify/qingcloud-csi
     icon: https://s3.qingcloud.com/static/assets/images/icons/common/nav_logo_white.svg?v=1510299508
     keywords:
@@ -1115,6 +1137,366 @@ entries:
     - https://charts.kubesphere.io/test/hertzbeat-1.4.0.tgz
     version: 1.4.0
   ks-core:
+  - apiVersion: v2
+    appVersion: v4.1.0
+    created: "2024-04-12T09:18:16.323051283Z"
+    dependencies:
+    - alias: redisHA
+      condition: redisHA.enabled
+      name: redis-ha
+      repository: ""
+      version: 4.26.1
+    description: A Helm chart for KubeSphere Core components
+    digest: 23e688cc624bcbc8f91f2e585b656b740c2f55c30815a01800651cbefab29486
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-1.0.0.tgz
+    version: 1.0.0
+  - apiVersion: v2
+    appVersion: v4.1.0-rc.1
+    created: "2024-04-11T02:51:22.203472476Z"
+    dependencies:
+    - alias: redisHA
+      condition: redisHA.enabled
+      name: redis-ha
+      repository: ""
+      version: 4.26.1
+    description: A Helm chart for KubeSphere Core components
+    digest: e0317e50a84235de7717b9962002e3463e58b2a850b512f4803fe019c1f7458f
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-1.0.0-rc.1.tgz
+    version: 1.0.0-rc.1
+  - apiVersion: v2
+    appVersion: v4.1.0-rc.0
+    created: "2024-04-08T17:05:33.362071263Z"
+    dependencies:
+    - alias: redisHA
+      condition: redisHA.enabled
+      name: redis-ha
+      repository: ""
+      version: 4.26.1
+    description: A Helm chart for KubeSphere Core components
+    digest: 8c8afb27f7fb3bfb927699d75f84d6338586e4fa13fe6701dbd551b5f023fb50
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.23.tgz
+    version: 0.6.23
+  - apiVersion: v2
+    appVersion: v4.1.0-beta.0
+    created: "2024-04-03T10:49:52.800259417Z"
+    dependencies:
+    - alias: redisHA
+      condition: redisHA.enabled
+      name: redis-ha
+      repository: ""
+      version: 4.26.1
+    description: A Helm chart for KubeSphere Core components
+    digest: 0ca7669fede535b43423279bed59ae9f1bda51cd0cca2c6372d55895abdcfd02
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.22.tgz
+    version: 0.6.22
+  - apiVersion: v2
+    appVersion: v4.1.0-beta.0
+    created: "2024-04-01T17:27:37.498383255Z"
+    dependencies:
+    - alias: redisHA
+      condition: redisHA.enabled
+      name: redis-ha
+      repository: ""
+      version: 4.26.1
+    description: A Helm chart for KubeSphere Core components
+    digest: 58434304974de8fbc82e3d51690fe4a7d0667d83bb3b0bcc8daae8098d7a8773
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.21.tgz
+    version: 0.6.21
+  - apiVersion: v2
+    appVersion: v4.1.0-beta.0
+    created: "2024-03-31T15:49:39.951664999Z"
+    dependencies:
+    - alias: redisHA
+      condition: redisHA.enabled
+      name: redis-ha
+      repository: ""
+      version: 4.26.1
+    description: A Helm chart for KubeSphere Core components
+    digest: 7c6329444fee3e50e32721a88efe5fdccad18b3f0df312842462498afa89206a
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.20.tgz
+    version: 0.6.20
+  - apiVersion: v2
+    appVersion: v4.1.0-beta.0
+    created: "2024-03-29T06:21:19.014009424Z"
+    dependencies:
+    - alias: redisHA
+      condition: redisHA.enabled
+      name: redis-ha
+      repository: ""
+      version: 4.26.1
+    description: A Helm chart for KubeSphere Core components
+    digest: 04309d57008083d8f2391373c8461322cd2fa84965b1803e4f60ee7cae8ae3df
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.19.tgz
+    version: 0.6.19
+  - apiVersion: v2
+    appVersion: v4.1.0-beta.0
+    created: "2024-03-28T16:40:45.682723905Z"
+    dependencies:
+    - alias: redisHA
+      condition: redisHA.enabled
+      name: redis-ha
+      repository: ""
+      version: 4.26.1
+    description: A Helm chart for KubeSphere Core components
+    digest: 3a7bdd9b25d186a67ac40207cbd90961fadab4b063cd329536ef1250e4b1afff
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.18.tgz
+    version: 0.6.18
+  - apiVersion: v2
+    appVersion: v4.1.0-beta.0
+    created: "2024-03-26T19:24:52.035706341Z"
+    dependencies:
+    - alias: redisHA
+      condition: redisHA.enabled
+      name: redis-ha
+      repository: ""
+      version: 3.9.0
+    description: A Helm chart for KubeSphere Core components
+    digest: 040b1694b14549699ca27f5adf4f39babe12866f205c1fa894c740fe92afe4ee
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.17.tgz
+    version: 0.6.17
+  - apiVersion: v2
+    appVersion: v4.1.0-beta.0
+    created: "2024-03-26T04:49:13.414840643Z"
+    dependencies:
+    - alias: redisHA
+      condition: redisHA.enabled
+      name: redis-ha
+      repository: ""
+      version: 3.9.0
+    description: A Helm chart for KubeSphere Core components
+    digest: 2cd4bc1beb47f5a51699325af030ebb1146a46057907e1ae60651393b0399e4f
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.16.tgz
+    version: 0.6.16
+  - apiVersion: v2
+    appVersion: v4.1.0-beta.0
+    created: "2024-03-21T20:37:36.677820479Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: a0048287338fe234144dfd2c76922ec61908d7f0a9bf07e900138e6627574412
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.14.tgz
+    version: 0.6.14
+  - apiVersion: v2
+    appVersion: v4.1.0-beta.0
+    created: "2024-03-19T05:19:09.33778146Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: ae94560101a0d79f0d5b6d3cae09d4a49c01f98bf6b012fcf8ff7e95b82f2870
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.13.tgz
+    version: 0.6.13
+  - apiVersion: v2
+    appVersion: v4.1.0-beta.0
+    created: "2024-03-14T01:42:47.6700714Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 20ad0bcb74aaf6bcea3a3b4731ca0e7ce46f01a6234374eaab6ca2e807155f20
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.12.tgz
+    version: 0.6.12
+  - apiVersion: v2
+    appVersion: v4.1.0-beta.0
+    created: "2024-03-13T05:37:26.066980064Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 5643a7eb80d7a1d81971b70c5ee3a5aa43b20a8085189c7dd3acee3a15441fbf
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.11.tgz
+    version: 0.6.11
+  - apiVersion: v2
+    appVersion: v4.1.0-beta.0
+    created: "2024-03-09T09:07:50.90830027Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 9cfce3c53756c78913f071ef94d775f4ed543b84890049b61229a29d7868bed9
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.10.tgz
+    version: 0.6.10
+  - apiVersion: v2
+    appVersion: v4.1.0-beta.0
+    created: "2024-03-09T05:31:34.737972206Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 7406931729dc7ec03a73d5fc38c008507d6477b472d13a2dd147f9cda38e29fd
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.9.tgz
+    version: 0.6.9
+  - apiVersion: v2
+    appVersion: v4.1.0-alpha.1
+    created: "2024-03-08T02:01:31.831812886Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 59f77f441d3b8a3d563b28c25df64acdc8a1bfaf4f9fb707f65f1833a93e566c
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.8.tgz
+    version: 0.6.8
+  - apiVersion: v2
+    appVersion: v4.1.0-alpha.1
+    created: "2024-03-06T05:31:58.37233879Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: b64609a4a140f2fb81eaf37579df329ad98996784824a96c7ccd90f9f3fcd883
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.7.tgz
+    version: 0.6.7
+  - apiVersion: v2
+    appVersion: v4.1.0-alpha.1
+    created: "2024-03-01T11:03:21.903867994Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: b64dec71f03b78d326d95d554d1c9c9a01fb5c659eeab22462b6042e0f109938
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.6.tgz
+    version: 0.6.6
+  - apiVersion: v2
+    appVersion: v4.1.0-alpha.1
+    created: "2024-03-01T07:08:14.683276503Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: e99b371100640496ec3ac89f1fe0addd249ae4ff565b0076de7b7c98a2bf0d4e
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.5.tgz
+    version: 0.6.5
+  - apiVersion: v2
+    appVersion: v4.1.0-alpha.1
+    created: "2024-02-27T16:56:38.051570692Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 5c594ce32031d23bd4a96fd30090e29a2a5e8bdbf061a16e2a2887dbe82f2a3c
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.4.tgz
+    version: 0.6.4
+  - apiVersion: v2
+    appVersion: v4.1.0-alpha.1
+    created: "2024-02-19T07:09:27.730254383Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: d73a795e4987b894ab6d913eb55256178114e57d8ae24f676fdb042aff2b7d0d
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.3.tgz
+    version: 0.6.3
+  - apiVersion: v2
+    appVersion: v4.1.0-alpha.0
+    created: "2024-02-06T03:20:35.492734783Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 66737f748aa4b6ffb7e73c06f7c160cb8b1be33ba7bd6c177aaa1e81c9ebc69b
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.2.tgz
+    version: 0.6.2
+  - apiVersion: v2
+    appVersion: v4.1.0-alpha.0
+    created: "2024-02-02T02:06:17.016416205Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 6a5d6d3fd26f6a8907a138d240f942db364f8e13db8b2805a6ece8f5effe9f91
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.1.tgz
+    version: 0.6.1
+  - apiVersion: v2
+    appVersion: v4.1.0-dev
+    created: "2024-02-01T11:35:15.746533867Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: cc52d509ccc349d87e6969d4f136c820f352546cc5265aa3b5d653dbd2f2c1ab
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.6.0.tgz
+    version: 0.6.0
+  - apiVersion: v2
+    appVersion: v4.1.0-dev
+    created: "2024-02-01T06:10:30.183444875Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 15d91c36ae0d861afc8371ef4afefa3bb73a2afeb1de63ea048b0603ee4a200e
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.5.8.tgz
+    version: 0.5.8
+  - apiVersion: v2
+    appVersion: v4.1.0-dev
+    created: "2024-01-31T10:26:16.855268201Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 631780aa346c19086876f9c2411e0e1c4ba9970398738419bf672539838ccd6c
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.5.7.tgz
+    version: 0.5.7
+  - apiVersion: v2
+    appVersion: v4.1.0-dev
+    created: "2024-01-22T10:42:54.722142746Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 2dfbed2ffffbcfcb9aa38aa8368fd865eee057b49514d0365c4d1254c26f5e9c
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.5.5.tgz
+    version: 0.5.5
+  - apiVersion: v2
+    appVersion: v4.1.0-dev
+    created: "2024-01-22T06:05:53.766257319Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 03310a55bcdd1ddf26916c0115a1d57026c0de7970a9181ebf8bc22af7882e3a
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.5.4.tgz
+    version: 0.5.4
+  - apiVersion: v2
+    appVersion: v4.1.0-dev
+    created: "2024-01-11T03:42:42.144395682Z"
+    description: A Helm chart for KubeSphere Core components
+    digest: 1228f5bfc05ad28248466768587910edf4d5fde4779e23983252e019702face9
+    name: ks-core
+    type: application
+    urls:
+    - https://charts.kubesphere.io/test/ks-core-0.5.3.tgz
+    version: 0.5.3
   - apiVersion: v2
     appVersion: v4.1.0-dev
     created: "2023-12-25T05:50:17.540871762Z"
@@ -2591,4 +2973,4 @@ entries:
     urls:
     - https://charts.kubesphere.io/test/xenondb-1.0.0.tgz
     version: 1.0.0
-generated: "2023-12-25T06:00:44.475849311Z"
+generated: "2024-04-12T09:18:16.318055398Z"

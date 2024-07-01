@@ -1,5 +1,54 @@
 apiVersion: v1
 entries:
+  IOMesh:
+  - annotations:
+      app.kubesphere.io/category: Storage
+    apiVersion: v2
+    appVersion: v5.5.0-rc27
+    created: "2024-06-25T02:18:54.926147992Z"
+    dependencies:
+    - name: zookeeper-operator
+      repository: file://charts/zookeeper-operator
+      version: 0.2.15-1
+    - name: hostpath-provisioner
+      repository: file://charts/hostpath-provisioner
+      version: 0.5.3-1
+    - condition: openebs-ndm.enabled
+      name: openebs-ndm
+      repository: file://charts/openebs-ndm
+      version: 1.8.0-1
+    - name: csi-driver
+      repository: file://charts/csi-driver
+      version: 2.7.2
+    - name: blockdevice-monitor
+      repository: file://charts/blockdevice-monitor
+      version: 0.1.0
+    - condition: iomesh-localpv-manager.enabled
+      name: iomesh-localpv-manager
+      repository: file://charts/iomesh-localpv-manager
+      version: 0.2.0
+    - name: deck
+      repository: file://charts/deck
+      version: 0.1.0
+    - name: deck-plugin-iomesh
+      repository: file://charts/deck-plugin-iomesh
+      version: 0.1.0
+    description: Enterprise Kubernetes-Native Distributed Storage
+    digest: 799f75c5a8276bd3d2a9ff122bc31e7cc09a345ae45a5a247681a7e9d8590831
+    home: https://www.iomesh.com
+    icon: https://www.iomesh.com/IOMesh_logo_on_white.svg
+    keywords:
+    - storage
+    - block-storage
+    maintainers:
+    - email: info@smartx.com
+      name: SmartX
+      url: https://www.iomesh.com
+    name: IOMesh
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/IOMesh-v1.1.0.tgz
+    version: v1.1.0
   antrea:
   - annotations:
       artifacthub.io/license: Apache-2.0
@@ -245,6 +294,31 @@ entries:
     version: 0.1.0
   databend-meta:
   - apiVersion: v2
+    appVersion: v1.2.279
+    created: "2024-01-11T05:54:25.481722881Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: A Helm chart for databend meta
+    digest: 2ccb93844a863ce8dbdf6e174cd767c9ff9b9b4e7bf4d6b2fa9ad68f812e2ddb
+    home: https://databend.rs
+    icon: https://databend.rs/img/favicon.svg
+    keywords:
+    - olap
+    - cloud data warehouse
+    - meta
+    - kv
+    maintainers:
+    - email: cloud.dev@datafuselabs.com
+      name: cloud.dev
+      url: https://databend.com
+    name: databend-meta
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/databend-meta-0.7.3.tgz
+    version: 0.7.3
+  - apiVersion: v2
     appVersion: v1.0.3-nightly
     created: "2023-03-09T08:40:26.816114045Z"
     dependencies:
@@ -290,6 +364,30 @@ entries:
     - https://charts.kubesphere.io/stable/databend-meta-0.3.0.tgz
     version: 0.3.0
   databend-query:
+  - apiVersion: v2
+    appVersion: v1.2.279
+    created: "2024-01-11T05:54:25.483073491Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: A Helm chart for databend query
+    digest: 959cfb877629dce3c95efcf4309567f8db1c16dd368f71472c5c3e9f786554c1
+    home: https://databend.rs
+    icon: https://databend.rs/img/favicon.svg
+    keywords:
+    - olap
+    - cloud data warehouse
+    - query
+    maintainers:
+    - email: cloud.dev@datafuselabs.com
+      name: cloud.dev
+      url: https://databend.com
+    name: databend-query
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/databend-query-0.8.3.tgz
+    version: 0.8.3
   - apiVersion: v2
     appVersion: v1.0.3-nightly
     created: "2023-03-09T08:40:26.821599378Z"
@@ -342,6 +440,162 @@ entries:
     - https://charts.kubesphere.io/stable/databend-query-0.3.0.tgz
     version: 0.3.0
   deepflow:
+  - apiVersion: v2
+    appVersion: 6.5.9
+    created: "2024-06-14T12:24:43.881287225Z"
+    dependencies:
+    - condition: clickhouse.enabled
+      name: clickhouse
+      repository: ""
+      version: '*.*.*'
+    - condition: mysql.enabled
+      name: mysql
+      repository: ""
+      version: '*.*.*'
+    - condition: deepflow-agent.enabled
+      name: deepflow-agent
+      repository: ""
+      version: '*.*.*'
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 7.*.*
+    - condition: stella-agent-ce.enabled
+      name: stella-agent-ce
+      repository: ""
+      version: '*.*.*'
+    description: An automated observability platform for cloud-native developers.
+    digest: 3c51459de2a11090c6e015b4fcc4111f6beaf73e846149e0acd6deb1b48c20ff
+    home: https://github.com/deepflowio/deepflow
+    icon: https://raw.githubusercontent.com/deepflowio/deepflow-charts/main/deepflow.svg
+    keywords:
+    - deepflow
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: deepflow
+      url: https://github.com/deepflowio/deepflow
+    name: deepflow
+    sources:
+    - https://github.com/deepflowio/deepflow
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/deepflow-6.5.010.tgz
+    version: 6.5.010
+  - apiVersion: v2
+    appVersion: 6.5.4
+    created: "2024-04-11T02:51:20.212377872Z"
+    dependencies:
+    - condition: clickhouse.enabled
+      name: clickhouse
+      repository: ""
+      version: '*.*.*'
+    - condition: mysql.enabled
+      name: mysql
+      repository: ""
+      version: '*.*.*'
+    - condition: deepflow-agent.enabled
+      name: deepflow-agent
+      repository: ""
+      version: '*.*.*'
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 7.*.*
+    - condition: stella-agent-ce.enabled
+      name: stella-agent-ce
+      repository: ""
+      version: '*.*.*'
+    description: An automated observability platform for cloud-native developers.
+    digest: 69ea1904cc4dc9d30cb70cb584b952a800e82ab81b83e79c55c82003c349c733
+    home: https://github.com/deepflowio/deepflow
+    icon: https://raw.githubusercontent.com/deepflowio/deepflow-charts/main/deepflow.svg
+    keywords:
+    - deepflow
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: deepflow
+      url: https://github.com/deepflowio/deepflow
+    name: deepflow
+    sources:
+    - https://github.com/deepflowio/deepflow
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/deepflow-6.5.007.tgz
+    version: 6.5.007
+  - apiVersion: v2
+    appVersion: 6.4.9
+    created: "2024-03-21T20:33:46.891305196Z"
+    dependencies:
+    - condition: clickhouse.enabled
+      name: clickhouse
+      repository: ""
+      version: '*.*.*'
+    - condition: mysql.enabled
+      name: mysql
+      repository: ""
+      version: '*.*.*'
+    - condition: deepflow-agent.enabled
+      name: deepflow-agent
+      repository: ""
+      version: '*.*.*'
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 7.*.*
+    description: An automated observability platform for cloud-native developers.
+    digest: 39900a6693638d668377eef5ede9d586dc06cfd3360226aa4c26bd18adf2a365
+    home: https://github.com/deepflowio/deepflow
+    icon: https://raw.githubusercontent.com/deepflowio/deepflow-charts/main/deepflow.svg
+    keywords:
+    - deepflow
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: deepflow
+      url: https://github.com/deepflowio/deepflow
+    name: deepflow
+    sources:
+    - https://github.com/deepflowio/deepflow
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/deepflow-6.4.013.tgz
+    version: 6.4.013
+  - apiVersion: v2
+    appVersion: 6.4.9
+    created: "2024-01-22T06:05:51.673366945Z"
+    dependencies:
+    - condition: clickhouse.enabled
+      name: clickhouse
+      repository: ""
+      version: '*.*.*'
+    - condition: mysql.enabled
+      name: mysql
+      repository: ""
+      version: '*.*.*'
+    - condition: deepflow-agent.enabled
+      name: deepflow-agent
+      repository: ""
+      version: '*.*.*'
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 7.*.*
+    description: An automated observability platform for cloud-native developers.
+    digest: ca6a315bfe66b10d927e31153404a6e4715776fc2b6758e4a1cb354210c1c60f
+    home: https://github.com/deepflowio/deepflow
+    icon: https://raw.githubusercontent.com/deepflowio/deepflow-charts/main/deepflow.svg
+    keywords:
+    - deepflow
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: deepflow
+      url: https://github.com/deepflowio/deepflow
+    name: deepflow
+    sources:
+    - https://github.com/deepflowio/deepflow
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/deepflow-6.4.012.tgz
+    version: 6.4.012
   - apiVersion: v2
     appVersion: 6.4.3
     created: "2023-12-05T03:11:35.492976367Z"
@@ -1705,6 +1959,83 @@ entries:
     urls:
     - https://charts.kubesphere.io/stable/fpga-operator-2.6.1.tgz
     version: 2.6.1
+  iomesh:
+  - annotations:
+      app.kubesphere.io/category: Storage
+    apiVersion: v2
+    appVersion: v5.5.0-rc27
+    created: "2024-06-14T12:24:43.894220279Z"
+    dependencies:
+    - name: zookeeper-operator
+      repository: file://charts/zookeeper-operator
+      version: 0.2.15-1
+    - name: hostpath-provisioner
+      repository: file://charts/hostpath-provisioner
+      version: 0.5.3-1
+    - condition: openebs-ndm.enabled
+      name: openebs-ndm
+      repository: file://charts/openebs-ndm
+      version: 1.8.0-1
+    - name: csi-driver
+      repository: file://charts/csi-driver
+      version: 2.7.2
+    - name: blockdevice-monitor
+      repository: file://charts/blockdevice-monitor
+      version: 0.1.0
+    - condition: iomesh-localpv-manager.enabled
+      name: iomesh-localpv-manager
+      repository: file://charts/iomesh-localpv-manager
+      version: 0.2.0
+    - name: deck
+      repository: file://charts/deck
+      version: 0.1.0
+    - name: deck-plugin-iomesh
+      repository: file://charts/deck-plugin-iomesh
+      version: 0.1.0
+    description: Install all IOMesh components
+    digest: fa6af9a8c9fc8bc28a33fa4ebbe94d8633c68e948b204f092b839d896cbd43a3
+    home: https://www.iomesh.com
+    icon: https://www.iomesh.com/IOMesh_logo_on_white.svg
+    maintainers:
+    - email: info@smartx.com
+      name: SmartX
+      url: https://www.iomesh.com
+    name: iomesh
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/iomesh-v1.1.0.tgz
+    version: v1.1.0
+  - apiVersion: v2
+    appVersion: v5.3.0-rc13
+    created: "2024-04-10T08:30:13.866953476Z"
+    dependencies:
+    - name: zookeeper-operator
+      repository: http://iomesh.com/charts
+      version: 0.2.15
+    - name: hostpath-provisioner
+      repository: http://iomesh.com/charts
+      version: 0.5.3
+    - condition: openebs-ndm.enabled
+      name: openebs-ndm
+      repository: http://iomesh.com/charts
+      version: 1.8.0
+    - name: csi-driver
+      repository: http://iomesh.com/charts
+      version: 2.6.0
+    - name: blockdevice-monitor
+      repository: http://iomesh.com/charts
+      version: 0.1.0
+    - condition: iomesh-localpv-manager.enabled
+      name: iomesh-localpv-manager
+      repository: http://iomesh.com/charts
+      version: 0.1.0
+    description: Install all IOMesh components
+    digest: 7cd6285c86615ab401723e936f49d238fc015bb883d0f42f21d2ef96af0f045e
+    name: iomesh
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/iomesh-v1.0.1.tgz
+    version: v1.0.1
   jh-gitlab:
   - apiVersion: v1
     appVersion: 14.8.2
@@ -2387,4 +2718,4 @@ entries:
     urls:
     - https://charts.kubesphere.io/stable/vsphere-csi-driver-1.3.0.tgz
     version: 1.3.0
-generated: "2023-12-05T03:11:35.482359936Z"
+generated: "2024-06-25T02:18:54.912782486Z"
