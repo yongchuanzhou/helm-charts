@@ -77,6 +77,23 @@ entries:
     urls:
     - https://charts.kubesphere.io/stable/antrea-1.9.0.tgz
     version: 1.9.0
+  ccm-qingcloud:
+  - apiVersion: v2
+    appVersion: 1.4.12
+    created: "2024-08-29T09:36:58.663392085Z"
+    description: A Helm chart for qingcloud cloud controller manager
+    digest: 9537664bf3dca82368a76497b3345a145077554a9cbe4559c5c7c0c0308f2298
+    home: https://github.com/yunify/qingcloud-cloud-controller-manager
+    keywords:
+    - qingcloud
+    - ccm
+    kubeVersion: '>=1.17.0-0'
+    name: ccm-qingcloud
+    sources:
+    - https://github.com/yunify/qingcloud-cloud-controller-manager
+    urls:
+    - https://charts.kubesphere.io/stable/ccm-qingcloud-0.1.0.tgz
+    version: 0.1.0
   chaos-mesh:
   - annotations:
       artifacthub.io/containsSecurityUpdates: "false"
@@ -192,6 +209,22 @@ entries:
     urls:
     - https://charts.kubesphere.io/stable/chaos-mesh-2.0.3.tgz
     version: 2.0.3
+  cni-hostnic:
+  - apiVersion: v2
+    appVersion: v1.0.3
+    created: "2024-08-29T09:36:58.663724663Z"
+    description: A Helm chart for qingcloud hostnic cni
+    digest: 4c4742161461fdb3faf376afa77f6f14eed1c377a2fa9c0b501bc46598a78504
+    home: https://github.com/cumirror/hostnic-cni
+    keywords:
+    - qingcloud
+    - hostnic
+    - cni
+    name: cni-hostnic
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/cni-hostnic-0.1.0.tgz
+    version: 0.1.0
   crane:
   - annotations:
       app.kubesphere.io/category: Continuous Optimization
@@ -271,6 +304,31 @@ entries:
     urls:
     - https://charts.kubesphere.io/stable/crane-0.5.0.tgz
     version: 0.5.0
+  csi-qingcloud:
+  - apiVersion: v2
+    appVersion: 1.4.0
+    created: "2024-08-29T09:36:58.664451043Z"
+    description: A Helm chart for Qingcloud CSI Driver
+    digest: aad8f3ae532dc51c565187b89149875364114e35ba08931d52952b815bc815db
+    home: https://github.com/yunify/qingcloud-csi
+    icon: https://s3.qingcloud.com/static/assets/images/icons/common/nav_logo_white.svg?v=1510299508
+    keywords:
+    - qingcloud
+    - csi
+    kubeVersion: '>=1.17.0-0'
+    maintainers:
+    - email: stoneshi@yunify.com
+      name: Yonghong Shi
+    - email: zheng1@yunify.com
+      name: Zhengyi Lai
+    - email: yangzhou@yunify.com
+      name: Yang Zhou
+    name: csi-qingcloud
+    sources:
+    - https://github.com/yunify/qingcloud-csi
+    urls:
+    - https://charts.kubesphere.io/stable/csi-qingcloud-1.4.0.tgz
+    version: 1.4.0
   curvefs-csi:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -440,6 +498,88 @@ entries:
     - https://charts.kubesphere.io/stable/databend-query-0.3.0.tgz
     version: 0.3.0
   deepflow:
+  - apiVersion: v2
+    appVersion: 6.5.9
+    created: "2024-08-29T09:36:58.674118152Z"
+    dependencies:
+    - condition: clickhouse.enabled
+      name: clickhouse
+      repository: ""
+      version: '*.*.*'
+    - condition: mysql.enabled
+      name: mysql
+      repository: ""
+      version: '*.*.*'
+    - condition: deepflow-agent.enabled
+      name: deepflow-agent
+      repository: ""
+      version: '*.*.*'
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 7.*.*
+    - condition: stella-agent-ce.enabled
+      name: stella-agent-ce
+      repository: ""
+      version: '*.*.*'
+    description: An automated observability platform for cloud-native developers.
+    digest: 68ea22427d5382376741bd06198680ec3834c14a29892dceef79ec3f87a29004
+    home: https://github.com/deepflowio/deepflow
+    icon: https://raw.githubusercontent.com/deepflowio/deepflow-charts/main/deepflow.svg
+    keywords:
+    - deepflow
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: deepflow
+      url: https://github.com/deepflowio/deepflow
+    name: deepflow
+    sources:
+    - https://github.com/deepflowio/deepflow
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/deepflow-6.5.012.tgz
+    version: 6.5.012
+  - apiVersion: v2
+    appVersion: 6.5.9
+    created: "2024-07-31T02:24:45.39200393Z"
+    dependencies:
+    - condition: clickhouse.enabled
+      name: clickhouse
+      repository: ""
+      version: '*.*.*'
+    - condition: mysql.enabled
+      name: mysql
+      repository: ""
+      version: '*.*.*'
+    - condition: deepflow-agent.enabled
+      name: deepflow-agent
+      repository: ""
+      version: '*.*.*'
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 7.*.*
+    - condition: stella-agent-ce.enabled
+      name: stella-agent-ce
+      repository: ""
+      version: '*.*.*'
+    description: An automated observability platform for cloud-native developers.
+    digest: 660010e6f8996944c33ab831299bd152545cbf2e68f3062b8a95eb64f55b4d03
+    home: https://github.com/deepflowio/deepflow
+    icon: https://raw.githubusercontent.com/deepflowio/deepflow-charts/main/deepflow.svg
+    keywords:
+    - deepflow
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: deepflow
+      url: https://github.com/deepflowio/deepflow
+    name: deepflow
+    sources:
+    - https://github.com/deepflowio/deepflow
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/deepflow-6.5.011.tgz
+    version: 6.5.011
   - apiVersion: v2
     appVersion: 6.5.9
     created: "2024-06-14T12:24:43.881287225Z"
@@ -2718,4 +2858,4 @@ entries:
     urls:
     - https://charts.kubesphere.io/stable/vsphere-csi-driver-1.3.0.tgz
     version: 1.3.0
-generated: "2024-06-25T02:18:54.912782486Z"
+generated: "2024-08-29T09:36:58.663005326Z"
