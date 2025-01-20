@@ -4,6 +4,54 @@ entries:
   - annotations:
       app.kubesphere.io/category: Storage
     apiVersion: v2
+    appVersion: v5.6.0-rc112
+    created: "2025-01-16T09:48:02.588491133Z"
+    dependencies:
+    - name: zookeeper-operator
+      repository: ""
+      version: 0.2.15-1
+    - name: hostpath-provisioner
+      repository: ""
+      version: 0.5.3-1
+    - condition: openebs-ndm.enabled
+      name: openebs-ndm
+      repository: ""
+      version: 1.8.0-3
+    - name: csi-driver
+      repository: ""
+      version: 2.8.0
+    - name: blockdevice-monitor
+      repository: ""
+      version: 0.2.1
+    - condition: iomesh-localpv-manager.enabled
+      name: iomesh-localpv-manager
+      repository: ""
+      version: 0.2.0
+    - name: deck
+      repository: ""
+      version: 0.2.0
+    - name: deck-plugin-iomesh
+      repository: ""
+      version: 0.2.0
+    description: Enterprise Kubernetes-Native Distributed Storage
+    digest: c2612beff6bd94302e78a80b71305abb8630cfaedd31ef5b8b3fb4a595e2ccd5
+    home: https://www.iomesh.com
+    icon: https://www.iomesh.com/IOMesh_logo_on_white.svg
+    keywords:
+    - storage
+    - block-storage
+    maintainers:
+    - email: info@smartx.com
+      name: SmartX
+      url: https://www.iomesh.com
+    name: IOMesh
+    type: application
+    urls:
+    - https://charts.kubesphere.io/stable/IOMesh-v1.2.0.tgz
+    version: v1.2.0
+  - annotations:
+      app.kubesphere.io/category: Storage
+    apiVersion: v2
     appVersion: v5.5.0-rc27
     created: "2024-06-25T02:18:54.926147992Z"
     dependencies:
@@ -80,9 +128,9 @@ entries:
   ccm-qingcloud:
   - apiVersion: v2
     appVersion: 1.4.12
-    created: "2024-08-29T09:36:58.663392085Z"
+    created: "2024-08-29T09:51:02.042404784Z"
     description: A Helm chart for qingcloud cloud controller manager
-    digest: 9537664bf3dca82368a76497b3345a145077554a9cbe4559c5c7c0c0308f2298
+    digest: 7ef8fefc9a0ba418fae8acb23409e5c40ea112703495629c6b1decf00d8a382f
     home: https://github.com/yunify/qingcloud-cloud-controller-manager
     keywords:
     - qingcloud
@@ -212,9 +260,9 @@ entries:
   cni-hostnic:
   - apiVersion: v2
     appVersion: v1.0.3
-    created: "2024-08-29T09:36:58.663724663Z"
+    created: "2024-08-29T09:51:02.042722428Z"
     description: A Helm chart for qingcloud hostnic cni
-    digest: 4c4742161461fdb3faf376afa77f6f14eed1c377a2fa9c0b501bc46598a78504
+    digest: 10dfc390c714d9ed3af02fae02b8f327ab853eafc802554fd398ba7d39edd770
     home: https://github.com/cumirror/hostnic-cni
     keywords:
     - qingcloud
@@ -307,9 +355,9 @@ entries:
   csi-qingcloud:
   - apiVersion: v2
     appVersion: 1.4.0
-    created: "2024-08-29T09:36:58.664451043Z"
+    created: "2024-08-29T09:51:02.043463985Z"
     description: A Helm chart for Qingcloud CSI Driver
-    digest: aad8f3ae532dc51c565187b89149875364114e35ba08931d52952b815bc815db
+    digest: b67fd36a7914119276e8c2191e8360ac9a9a4e9d1a2c1183984ea8b14dc75802
     home: https://github.com/yunify/qingcloud-csi
     icon: https://s3.qingcloud.com/static/assets/images/icons/common/nav_logo_white.svg?v=1510299508
     keywords:
@@ -500,7 +548,7 @@ entries:
   deepflow:
   - apiVersion: v2
     appVersion: 6.5.9
-    created: "2024-08-29T09:36:58.674118152Z"
+    created: "2024-08-29T09:51:02.053940847Z"
     dependencies:
     - condition: clickhouse.enabled
       name: clickhouse
@@ -523,7 +571,7 @@ entries:
       repository: ""
       version: '*.*.*'
     description: An automated observability platform for cloud-native developers.
-    digest: 68ea22427d5382376741bd06198680ec3834c14a29892dceef79ec3f87a29004
+    digest: ca886f9392c60c7e7649f4cc14d1312b594543c0ab4785a90c768134194fc63c
     home: https://github.com/deepflowio/deepflow
     icon: https://raw.githubusercontent.com/deepflowio/deepflow-charts/main/deepflow.svg
     keywords:
@@ -2858,4 +2906,4 @@ entries:
     urls:
     - https://charts.kubesphere.io/stable/vsphere-csi-driver-1.3.0.tgz
     version: 1.3.0
-generated: "2024-08-29T09:36:58.663005326Z"
+generated: "2025-01-16T09:48:02.580619794Z"
